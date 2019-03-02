@@ -1,0 +1,76 @@
+.jumbotron {
+  background-image: url("pingpong.jpg");
+  background-position: 0% 22%;
+  background-size: cover;
+  text-align: center;
+  color: black;
+  border-style: solid;
+  border-width: 5px;
+}
+
+h1 {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+h2{
+  padding-top: 20px;
+}
+
+h2, p, form{
+  padding-left: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  border-width: 1px;
+  border-radius: 15px;
+  box-shadow: 0 4px #313f2d;
+  padding-bottom: 20px;
+}
+
+button:hover {background-color: #587051}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("wallpaper3.jpg");
+}
+
+.header {
+  background-color: black;
+  color: White;
+}
+
+.container {
+  width: 100%;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+  padding: 50px;
+  background-image: url("pong.jpg")
+}
+
+.footer {
+  background-color: black;
+  color: White;
+  text-align: center;
+}
+
+.instructions {
+  color: black;
+  background: rgba(255, 255, 255, 0.75);
+  border-style: solid;
+  border-width: 5px;
+}
+.col-lg-12 {
+ color: black;
+ text-align: left;
+}
+
+.row{
+  padding-left: 20px;
+}
