@@ -36,7 +36,6 @@ button:hover {background-color: #587051}
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("wallpaper3.jpg");
 }
 
 .header {
@@ -69,6 +68,7 @@ body {
 .col-lg-12 {
  color: black;
  text-align: left;
+ display: none;
 }
 
 .row{

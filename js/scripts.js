@@ -1,12 +1,19 @@
-/*$(document).ready(function() {
-  $("form#add").submit(function(event) {
+$(document).ready(function() {
+  $("form#number").submit(function(event) {
     event.preventDefault();
-    var number1 = parseInt($("#add1").val());
-    var number2 = parseInt($("#add2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
+    var numberInput = $("input#number").val();
+    var ping="ping";
+    var pong="pong";
+    var text=""
+    if (numberInput%2 == 0) {
+      text="Divisible by 2"
+    }
+
+     $(".item").append(text);
+    $(".item").text(text);
+    $(".col-lg-12").show();
   });
-});*/
+});
 
 /*$(".my-class").show();
 $(".my-class").hide();
