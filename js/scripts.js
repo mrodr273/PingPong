@@ -10,33 +10,40 @@ var divisible = function(numberInput) {
     return numberInput
   }
 };
+
+
 $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
     var numberInput = $("input#number").val();
     var text=""
     var data=[]
-
     var arr= []
     var arrR=[]
     var list = "";
     var ul = document.createElement('ul');
     document.getElementById('myItemList').appendChild(ul);
-
-    for (var i = 0; i < numberInput; i++) {
+    var counter = numberInput
+    for (var i = 0; i <= counter; i++) {
       var result =  divisible(numberInput);
       numberInput -= 1
       arr[i]= result
       arrR.push(arr[i])
     }
+
+    /*var reversed = arrR.reverse();
+    alert(arrR)
+    alert(reversed)*/
+
 //NEED TO REVERSE ORDER OF ARRAY and display one list
     $(".col-lg-12").show();
-
-    arrR.forEach(function (arrR) {
+    $("button").hide();
+    arrR.forEach(function (reversed) {
     var li = document.createElement('li');
     ul.appendChild(li);
 
-    li.innerHTML += arrR;
-});
+    li.innerHTML += reversed;
+    });
   });
+
 });
