@@ -1,15 +1,23 @@
+
 $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
     var numberInput = $("input#number").val();
-    var ping="ping";
-    var pong="pong";
     var text=""
-    if (numberInput%2 == 0) {
-      text="Divisible by 2"
+    var data=[]
+
+    if (numberInput%3 == 0) {
+      text = "ping"
+    } else if (numberInput % 5 == 0) {
+      text = "pong"
+    } else if (numberInput % 3 == 0 && numberInput % 5 == 0) {
+      text = "pingpong"
+    } else {
+      text = numberInput
     }
 
-     $(".item").append(text);
+
+    $(".item").append(text);
     $(".item").text(text);
     $(".col-lg-12").show();
   });
