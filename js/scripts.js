@@ -24,25 +24,23 @@ $(document).ready(function() {
     var ul = document.createElement('ul');
     document.getElementById('myItemList').appendChild(ul);
     var counter = numberInput
-    for (var i = 0; i <= counter; i++) {
+    for (var i = 1; i <= counter; i++) {
       var result =  divisible(numberInput);
       numberInput -= 1
       arr[i]= result
       arrR.push(arr[i])
     }
-
-    /*var reversed = arrR.reverse();
-    alert(arrR)
-    alert(reversed)*/
-
+    arrR=arrR.reverse();
 //NEED TO REVERSE ORDER OF ARRAY and display one list
     $(".col-lg-12").show();
     $("button").hide();
-    arrR.forEach(function (reversed) {
+    arrR.forEach(function(arrR) {
     var li = document.createElement('li');
     ul.appendChild(li);
 
-    li.innerHTML += reversed;
+    li.innerHTML += arrR;
+
+
     });
   });
 
